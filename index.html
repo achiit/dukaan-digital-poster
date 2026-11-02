@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Digital Poster – AI Poster Design Studio</title>
+<meta name="description" content="Digital Poster: premium poster, logo, social media and event designs. Pick a sample and order on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#f4f1fb;--sf:#fff;--tx:#1a1433;--mu:#5d5675;--ln:#1a143324;--gold:#e0a21b;--wa:#128043;--wat:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#120d24;--sf:#1c1535;--tx:#f6f1e7;--mu:#b6aed0;--ln:#ffffff24;--gold:#f4b942;--wa:#25d366;--wat:#052e16}}
+:root[data-theme="dark"]{--bg:#120d24;--sf:#1c1535;--tx:#f6f1e7;--mu:#b6aed0;--ln:#ffffff24;--gold:#f4b942;--wa:#25d366;--wat:#052e16}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 1rem/1.6 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+h1,h2,h3{font-family:Syne,"DM Sans",sans-serif;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--ln)}
+header .wrap{display:flex;align-items:center;gap:20px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;font:800 1.2rem Syne,sans-serif;text-decoration:none;margin-right:auto}
+.mark{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-size:.9rem;color:#1a1433;background:linear-gradient(135deg,var(--gold),#ff8a5c)}
+nav a{text-decoration:none;font-weight:500;color:var(--mu);margin-left:18px}
+nav a:hover{color:var(--tx)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 22px;border-radius:99px;font-weight:700;text-decoration:none;border:2px solid var(--ln);background:none;color:var(--tx);cursor:pointer;font-family:inherit;font-size:1rem}
+.btn.wa,.wa{background:var(--wa);color:var(--wat);border-color:transparent}
+.btn:hover{transform:translateY(-2px)}
+.hero{padding:48px 0 56px;background:radial-gradient(60% 60% at 85% 20%,color-mix(in srgb,#7c4dff 30%,transparent),transparent),radial-gradient(40% 50% at 5% 90%,color-mix(in srgb,var(--gold) 22%,transparent),transparent)}
+.hero .wrap{display:grid;gap:24px;align-items:center}
+@media(min-width:900px){.hero .wrap{grid-template-columns:1.05fr 1fr}}
+h1{font-size:clamp(2.3rem,6vw,4.4rem);line-height:1.02;letter-spacing:-.02em}
+.lead{font-size:1.1rem;color:var(--mu);max-width:52ch;margin:18px 0 26px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 0;padding:0;list-style:none}
+.chips li{font-size:.88rem;padding:6px 14px;border:1px solid var(--ln);border-radius:99px;color:var(--mu)}
+.stage{perspective:1400px;height:clamp(300px,56vw,480px);display:grid;place-items:center;overflow:hidden}
+.tilt{transform-style:preserve-3d;transform:rotateX(-9deg)}
+.ring{--w:clamp(120px,19vw,185px);position:relative;width:var(--w);aspect-ratio:3/4;transform-style:preserve-3d;animation:spin 28s linear infinite}
+.stage:hover .ring{animation-play-state:paused}
+@keyframes spin{to{transform:rotateY(-360deg)}}
+.rp{position:absolute;inset:0;padding:0;border:0;background:none;cursor:pointer;backface-visibility:hidden;transform:rotateY(calc(var(--k) * 60deg)) translateZ(calc(var(--w) * 1.22))}
+section{padding:64px 0;content-visibility:auto;contain-intrinsic-size:auto 700px}
+h2{font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.08;margin-bottom:12px}
+.sub{color:var(--mu);max-width:58ch;margin:0 0 28px}
+.svc{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.svc div{background:var(--sf);border:1px solid var(--ln);border-radius:20px;padding:24px}
+.svc span{font-size:1.8rem}
+.svc h3{font-size:1.15rem;margin:10px 0 6px}
+.svc p{margin:0;color:var(--mu);font-size:.96rem}
+.filters{display:flex;gap:8px;overflow-x:auto;padding:4px 0 14px;margin-bottom:12px;scrollbar-width:thin}
+.filters button{flex:none;min-height:42px;padding:0 18px;border-radius:99px;border:1px solid var(--ln);background:var(--sf);color:var(--tx);font:500 .95rem "DM Sans",sans-serif;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--tx);color:var(--bg);border-color:var(--tx)}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr))}
+.card{perspective:900px;animation:pop .5s both;animation-delay:calc(var(--d) * 45ms);background:var(--sf);border:1px solid var(--ln);border-radius:22px;padding:12px}
+@keyframes pop{from{opacity:0;transform:translateY(16px) scale(.96)}}
+.pv{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in;border-radius:16px;transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .2s ease-out}
+.card:hover .pv{box-shadow:0 22px 40px -18px #000a}
+.meta{display:grid;gap:10px;padding:12px 4px 4px}
+.meta span{font-size:.85rem;color:var(--mu)}
+.meta .wa{min-height:46px;border-radius:99px;display:grid;place-items:center;font-weight:700;text-decoration:none;padding:0 12px;text-align:center}
+.meta .wa:hover{filter:brightness(1.08)}
+.poster{container-type:inline-size;width:100%;aspect-ratio:3/4;position:relative;display:flex;flex-direction:column;padding:8cqw;border-radius:5cqw;overflow:hidden;color:#fff;text-align:left;background:radial-gradient(circle at 75% 20%,color-mix(in srgb,var(--x) 42%,transparent),transparent 55%),linear-gradient(155deg,var(--a),var(--b));box-shadow:0 3cqw 8cqw -3cqw #0009}
+.poster::after{content:"";position:absolute;inset:3cqw;border:.5cqw solid color-mix(in srgb,var(--x) 55%,transparent);border-radius:3.4cqw;pointer-events:none}
+.tag{align-self:flex-start;background:var(--x);color:#14101f;font:700 3.6cqw/1 "DM Sans",sans-serif;padding:1.9cqw 3.4cqw;border-radius:99cqw}
+.em{flex:1;display:grid;place-items:center;font-size:38cqw;line-height:1;filter:drop-shadow(0 4cqw 5cqw #0008)}
+.poster h3{font:800 10.5cqw/1.05 Syne,sans-serif;margin:0 0 2.2cqw;text-shadow:0 .6cqw 2cqw #0007}
+.poster p{margin:0;font-size:4.6cqw;line-height:1.35;opacity:.94}
+.poster small{margin-top:4cqw;font-size:3.2cqw;font-weight:700;letter-spacing:.08em;color:var(--x)}
+.vc{margin:auto;width:80%;display:grid;gap:1.2cqw;padding:6cqw;border-radius:3cqw;background:#fff;color:#1b1f3b;transform:rotate(-6deg);box-shadow:0 5cqw 9cqw -2cqw #0009}
+.vc b{font:800 7.4cqw Syne,sans-serif}.vc span{font-size:4cqw;font-weight:700;color:#3b4cc0}.vc i{font-style:normal;font-size:3.4cqw;opacity:.7}
+.end{text-align:center;background:linear-gradient(135deg,#2a1a63,#6d2fa8);color:#fff;border-radius:28px;padding:clamp(32px,6vw,64px) 20px;margin-bottom:20px}
+.end p{color:#e4dcff;margin:0 auto 24px;max-width:50ch}
+.end .btn.wa{background:#25d366;color:#052e16;min-height:54px;padding:0 32px;font-size:1.08rem}
+footer{border-top:1px solid var(--ln);padding:28px 0 90px;color:var(--mu);font-size:.9rem}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:9;min-height:52px;padding:0 20px;box-shadow:0 10px 24px -8px #000a}
+dialog{width:100%;height:100%;max-width:none;max-height:none;margin:0;padding:0;border:0;background:transparent;color:#fff}
+dialog::backdrop{background:#080512f0;backdrop-filter:blur(6px)}
+.lbx{min-height:100dvh;display:grid;align-content:center;justify-items:center;gap:12px;padding:16px}
+#lbBody{width:min(86vw,calc((100dvh - 200px) * .75));animation:pop .35s both;--d:0}
+.lbx nav{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center}
+.lbx nav a,.lbx nav button{margin:0}
+.lbx .btn{color:#fff;border-color:#ffffff55}
+.lbx .btn.wa{background:#25d366;color:#052e16}
+#lbCap{font-size:.95rem;opacity:.85;text-align:center}
+@media(max-width:700px){nav a{display:none}.hero{padding-top:28px}section{padding:44px 0}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="#top"><span class="mark" aria-hidden="true">DP</span>Digital Poster</a>
+  <nav aria-label="Main"><a href="#gallery">Gallery</a><a href="#services">Services</a><a href="#order">Order</a></nav>
+  <a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/923187762473?text=Assalam%20o%20Alaikum!%20I%20want%20to%20order%20a%20poster%20from%20Digital%20Poster.">Order on WhatsApp</a>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>Your Imagination, Our Digital Designs</h1>
+    <p class="lead">AI-assisted poster design for schools, shops, property dealers, creators and celebrations. Pick a style you like, message us on WhatsApp, and we’ll shape it around your idea.</p>
+    <div class="cta">
+      <a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/923187762473?text=Assalam%20o%20Alaikum!%20I%20want%20a%20custom%20poster%20from%20Digital%20Poster.">Create Your Poster on WhatsApp</a>
+      <a class="btn" href="#gallery">Browse sample designs</a>
+    </div>
+    <ul class="chips"><li>Original sample designs</li><li>Mobile-ready layouts</li><li>Order in one WhatsApp message</li></ul>
+  </div>
+  <div class="stage" aria-label="Rotating showcase of sample posters"><div class="tilt"><div class="ring" id="ring"></div></div></div>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <h2>Designs made around your message</h2>
+  <p class="sub">Tell us what you want to say. We handle the layout, colors and typography.</p>
+  <div class="svc">
+    <div><span>🎨</span><h3>Posters for every purpose</h3><p>Education, business, property, food, faith, social media and celebrations.</p></div>
+    <div><span>✍️</span><h3>Your words, your brand</h3><p>Share your text, logo and colors, and we adapt a sample to fit them.</p></div>
+    <div><span>🖨️</span><h3>Ready for print and screen</h3><p>Sized for wall posters, banners, thumbnails and social feeds.</p></div>
+    <div><span>💬</span><h3>Order in one message</h3><p>Tap any sample and WhatsApp opens with your request already written.</p></div>
+  </div>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+  <h2>Sample poster gallery</h2>
+  <p class="sub">Tap a poster for full-screen preview. These are original sample designs by Digital Poster, not customer orders or reviews.</p>
+  <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
+  <div class="grid" id="grid" aria-live="polite"></div>
+</div></section>
+
+<section id="order"><div class="wrap">
+  <div class="end">
+    <h2>Have a poster in mind?</h2>
+    <p>Send us your idea, text and size. We’ll reply on WhatsApp with the next steps.</p>
+    <a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/923187762473?text=Assalam%20o%20Alaikum!%20I%20have%20a%20poster%20idea%20for%20Digital%20Poster.">Start your order on WhatsApp</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© Digital Poster. Sample posters are original illustrations made to show our style.</div></footer>
+<a class="btn wa fab" target="_blank" rel="noopener" href="https://wa.me/923187762473?text=Assalam%20o%20Alaikum!%20I%20want%20to%20order%20a%20poster." aria-label="Chat on WhatsApp">💬 WhatsApp</a>
+
+<dialog id="lb" aria-label="Poster preview"><div class="lbx">
+  <div id="lbBody"></div>
+  <div id="lbCap"></div>
+  <nav><button class="btn" id="prev" aria-label="Previous poster">‹ Prev</button><a class="btn wa" id="lbWa" target="_blank" rel="noopener">Create Similar Poster</a><button class="btn" id="next" aria-label="Next poster">Next ›</button></nav>
+  <button class="btn" id="close">Close</button>
+</div></dialog>
+
+<script>
+const CATS=['Educational','Business & Branding','Real Estate','Food & Products','Islamic Designs','Social Media','Special Events'];
+/* [category, tag, title, subtitle, emoji, colorA, colorB, accent, layout] */
+const P=[
+[0,'Science','Our Solar System','Eight planets, one Sun, endless orbits','🪐','#0b1d4a','#3b1d7a','#6fd3ff'],
+[0,'Computer Learning','Learn Computers From Zero','Hardware, software, internet and typing','💻','#063b3a','#0b2a5b','#5ef0c0'],
+[0,'World Map','Explore the World','Continents, oceans and capitals at a glance','🌍','#0a3d62','#1b6b4f','#ffd166'],
+[1,'Logo Design','Luxe Brand Identity','Premium logos that look great everywhere','👑','#1d1a12','#4a3512','#f4c95d'],
+[1,'Promotion','Grand Opening Sale','Up to 50% off this weekend only','🛍️','#7a0f2e','#d6336c','#ffe08a'],
+[1,'Visiting Card','Premium Business Cards','Clean, memorable and print-ready','Ayesha Khan','#1b1f3b','#2d3a8c','#9fb4ff','card'],
+[2,'For Sale','Luxury Villa, Prime Location','5 bedrooms, garden, private parking','🏡','#0f2a2e','#1f5a5a','#f0d28a'],
+[2,'New Listing','Modern Apartments','Skyline views and flexible payment plans','🏙️','#18213f','#374a8f','#ffb870'],
+[3,'100% Natural','Pure Forest Honey','Golden, raw and straight from the hive','🍯','#4a2a05','#a45d0a','#ffd35a'],
+[3,'Fresh Today','Juicy Fruit Basket','Handpicked, washed and delivered fresh','🍓','#5c0f2a','#c2255c','#ffd6a5'],
+[3,'Skincare','Glow Daily Serum','Light, hydrating and gentle on skin','🧴','#3a1d5c','#c05a9a','#ffe3f1'],
+[4,'Admission Open','Quran Academy Online','Tajweed and Nazra classes for kids and adults','📖','#06382e','#0d6b4f','#f0d28a'],
+[4,'Daily Reminder','Hardship Brings Ease','فَإِنَّ مَعَ الْعُسْرِ يُسْرًا','🌙','#102a54','#27407f','#f4d98a'],
+[4,'Masjid','Peace of the Masjid','A calm place to pray, reflect and gather','🕌','#0d3b3b','#1d6e6a','#ffe7a8'],
+[5,'YouTube Thumbnail','I Tried This for 30 Days','Bold text that gets the click','🔥','#b3120f','#ff6a00','#fff27a'],
+[5,'TikTok','Viral Vibes Only','Short, loud and made for the scroll','🎵','#12122b','#6b1fa8','#4dfcf0'],
+[5,'Instagram Post','Fresh Look, New Season','Square-ready layouts for your feed','📸','#7a1f8f','#e0447a','#ffd2a8'],
+[5,'Facebook Ad','Weekend Mega Deal','Clear offer, clear button, clear price','📣','#0d3a8c','#1877f2','#cfe3ff'],
+[6,'Birthday','Happy Birthday!','Cake, candles and a day to remember','🎂','#6a1b9a','#ff5d8f','#ffe27a'],
+[6,'Wedding','Save the Date','Together with joy, we invite you to celebrate','💍','#3a1c2e','#8a3a5c','#f5d9a8']
+];
+const WA='https://wa.me/923187762473?text=';
+const link=p=>WA+encodeURIComponent(`Assalam o Alaikum! I’d like a poster similar to “${p[2]}” (${CATS[p[0]]} sample) from Digital Poster. Please share the details and price.`);
+const poster=p=>{const[,tag,t,s,e,a,b,x,l]=p;return `<div class="poster" style="--a:${a};--b:${b};--x:${x}"><span class="tag">${tag}</span>${l?`<div class="vc"><b>${e}</b><span>Interior Designer</span><i>+92 300 0000000</i><i>hello@yourbrand.com</i></div><h3>${t}</h3><p>${s}</p>`:`<div class="em" aria-hidden="true">${e}</div><h3>${t}</h3><p>${s}</p>`}<small>DIGITAL POSTER</small></div>`};
+const $=id=>document.getElementById(id);
+const all=P.map((_,i)=>i);
+let vis=all,cur=0,filt=-1;
+
+$('ring').innerHTML=[0,6,8,11,14,18].map((i,k)=>`<button class="rp" style="--k:${k}" data-i="${i}" aria-label="Preview ${P[i][2]}">${poster(P[i])}</button>`).join('');
+
+$('filters').innerHTML=['All',...CATS].map((c,i)=>`<button data-f="${i-1}" aria-pressed="${i===0}">${c}</button>`).join('');
+
+function render(){
+  vis=all.filter(i=>filt<0||P[i][0]===filt);
+  $('grid').innerHTML=vis.map((i,n)=>`<article class="card" style="--d:${Math.min(n,10)}"><button class="pv" data-i="${i}" aria-label="Preview ${P[i][2]}">${poster(P[i])}</button><div class="meta"><span>${CATS[P[i][0]]}</span><a class="wa" target="_blank" rel="noopener" href="${link(P[i])}">Create Similar Poster</a></div></article>`).join('');
+}
+render();
+
+$('filters').onclick=e=>{const b=e.target.closest('button');if(!b)return;filt=+b.dataset.f;
+  [...$('filters').children].forEach(x=>x.setAttribute('aria-pressed',x===b));render()};
+
+const lb=$('lb');
+function show(){const i=vis[cur],p=P[i];$('lbBody').innerHTML=poster(p);$('lbWa').href=link(p);$('lbCap').textContent=p[2]+' ('+CATS[p[0]]+' sample)'}
+function openLb(i,list){vis=list;cur=Math.max(0,vis.indexOf(i));show();if(!lb.open)lb.showModal()}
+function step(d){cur=(cur+d+vis.length)%vis.length;show()}
+document.addEventListener('click',e=>{
+  const b=e.target.closest('.pv,.rp');
+  if(b)openLb(+b.dataset.i,b.classList.contains('rp')?all:vis)});
+$('prev').onclick=()=>step(-1);$('next').onclick=()=>step(1);$('close').onclick=()=>lb.close();
+lb.addEventListener('click',e=>{if(e.target===lb||e.target.classList.contains('lbx'))lb.close()});
+lb.addEventListener('close',()=>{vis=all.filter(i=>filt<0||P[i][0]===filt)});
+document.addEventListener('keydown',e=>{if(!lb.open)return;if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1)});
+
+if(matchMedia('(hover:hover) and (pointer:fine)').matches){
+  const g=$('grid');
+  g.addEventListener('pointermove',e=>{const c=e.target.closest('.card');if(!c)return;const pv=c.querySelector('.pv'),r=c.getBoundingClientRect();
+    pv.style.setProperty('--ry',((e.clientX-r.left)/r.width-.5)*14+'deg');pv.style.setProperty('--rx',(.5-(e.clientY-r.top)/r.height)*14+'deg')});
+  g.addEventListener('pointerout',e=>{const c=e.target.closest('.card');if(c){const pv=c.querySelector('.pv');pv.style.setProperty('--rx','0deg');pv.style.setProperty('--ry','0deg')}});
+}
+</script>
+</body>
+</html>
